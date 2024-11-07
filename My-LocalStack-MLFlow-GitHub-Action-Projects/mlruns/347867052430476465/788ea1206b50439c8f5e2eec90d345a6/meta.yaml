@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/1-Programming/1-Training-Files-Codes/Python/1-Ramin-Codes/Codes_1403/My-Machine-Learning-Projects/My-Proj1-LocalStack-MLFlow-GitHub-Action/mlruns/347867052430476465/788ea1206b50439c8f5e2eec90d345a6/artifacts
+end_time: 1730958660016
+entry_point_name: ''
+experiment_id: '347867052430476465'
+lifecycle_stage: active
+run_id: 788ea1206b50439c8f5e2eec90d345a6
+run_name: dazzling-frog-848
+run_uuid: 788ea1206b50439c8f5e2eec90d345a6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730958652221
+status: 3
+tags: []
+user_id: Laptop Market - LTM

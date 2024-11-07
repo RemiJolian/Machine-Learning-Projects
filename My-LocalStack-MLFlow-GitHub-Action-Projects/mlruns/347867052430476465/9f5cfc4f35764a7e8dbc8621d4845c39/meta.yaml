@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/1-Programming/1-Training-Files-Codes/Python/1-Ramin-Codes/Codes_1403/My-Machine-Learning-Projects/My-Proj1-LocalStack-MLFlow-GitHub-Action/mlruns/347867052430476465/9f5cfc4f35764a7e8dbc8621d4845c39/artifacts
+end_time: 1730959942759
+entry_point_name: ''
+experiment_id: '347867052430476465'
+lifecycle_stage: active
+run_id: 9f5cfc4f35764a7e8dbc8621d4845c39
+run_name: secretive-boar-626
+run_uuid: 9f5cfc4f35764a7e8dbc8621d4845c39
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730959934721
+status: 3
+tags: []
+user_id: Laptop Market - LTM

@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/1-Programming/1-Training-Files-Codes/Python/1-Ramin-Codes/Codes_1403/My-Machine-Learning-Projects/My-Proj1-LocalStack-MLFlow-GitHub-Action/mlruns/347867052430476465/37737bbc8a314c449943a79f8b128cf4/artifacts
+end_time: 1730958139794
+entry_point_name: ''
+experiment_id: '347867052430476465'
+lifecycle_stage: active
+run_id: 37737bbc8a314c449943a79f8b128cf4
+run_name: masked-crow-724
+run_uuid: 37737bbc8a314c449943a79f8b128cf4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730958132309
+status: 3
+tags: []
+user_id: Laptop Market - LTM

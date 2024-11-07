@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/1-Programming/1-Training-Files-Codes/Python/1-Ramin-Codes/Codes_1403/My-Machine-Learning-Projects/My-Proj1-LocalStack-MLFlow-GitHub-Action/mlruns/347867052430476465/8d3c0c09b2674997bbce7b2a63d0029c/artifacts
+end_time: 1730958086258
+entry_point_name: ''
+experiment_id: '347867052430476465'
+lifecycle_stage: active
+run_id: 8d3c0c09b2674997bbce7b2a63d0029c
+run_name: burly-cod-300
+run_uuid: 8d3c0c09b2674997bbce7b2a63d0029c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730958078405
+status: 3
+tags: []
+user_id: Laptop Market - LTM
