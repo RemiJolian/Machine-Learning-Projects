@@ -1,0 +1,55 @@
+name: Train and Track Model with MLflow
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  train_and_track:
+    runs-on: ubuntu-latest
+
+    services:
+      localstack:
+        image: localstack/localstack
+        ports:
+          - 4566:4566  # S3 and other services on LocalStack
+
+    env:
+      AWS_ACCESS_KEY_ID: test
+      AWS_SECRET_ACCESS_KEY: test
+      AWS_DEFAULT_REGION: us-east-1
+      MLFLOW_TRACKING_URI: http://127.0.0.1:5000
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'
+
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Start MLflow Server
+      run: |
+        nohup mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root s3://my-mlflow-bucket/ --host 127.0.0.1 &
+        sleep 10  # Allow time for MLflow server to start
+
+    - name: Set Up LocalStack S3 Bucket
+      run: |
+        aws --endpoint-url=http://localhost:4566 s3 mb s3://my-mlflow-bucket
+
+    - name: Run Training Script
+      run: python your_training_script.py
+
+    - name: Upload Artifacts to LocalStack S3
+      run: |
+        aws --endpoint-url=http://localhost:4566 s3 sync mlflow_server/artifacts s3://my-mlflow-bucket/models/
