@@ -48,7 +48,7 @@ jobs:
         aws --endpoint-url=http://localhost:4566 s3 mb s3://my-mlflow-bucket
 
     - name: Run Training Script
-      run: python your_training_script.py
+      run: python train_model.py
 
     - name: Upload Artifacts to LocalStack S3
       run: |
