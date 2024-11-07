@@ -2,15 +2,6 @@
 
 ## Table of Contents
 
-<<<<<<< HEAD
-1. [Branch Strategy](#branch-strategy)
-2. [Commit Best Practices](#commit-best-practices)
-3. [Pull Requests](#pull-requests)
-4. [Code Review](#code-review)
-5. [Merging](#merging)
-6. [Release Management](#release-management)
-7. [Git Commands and Tips](#git-commands-and-tips)
-=======
 - [Git Workflow Best Practices](#git-workflow-best-practices)
   - [Table of Contents](#table-of-contents)
   - [Branch Strategy](#branch-strategy)
@@ -22,7 +13,6 @@
   - [Merging](#merging)
   - [Release Management](#release-management)
   - [Git Commands and Tips](#git-commands-and-tips)
->>>>>>> b3a8fa9 (some file changed)
 
 ## Branch Strategy
 
