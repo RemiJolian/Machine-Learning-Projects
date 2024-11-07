@@ -40,16 +40,16 @@ jobs:
 
     - name: Start MLflow Server
       run: |
-        nohup mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root s3://my-mlflow-bucket/ --host 127.0.0.1 &
+        nohup mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root s3://my-iris-bucket/ --host 127.0.0.1 &
         sleep 10  # Allow time for MLflow server to start
 
     - name: Set Up LocalStack S3 Bucket
       run: |
-        aws --endpoint-url=http://localhost:4566 s3 mb s3://my-mlflow-bucket
+        aws --endpoint-url=http://localhost:4566 s3 mb s3://my-iris-bucket
 
     - name: Run Training Script
       run: python train_model.py
 
     - name: Upload Artifacts to LocalStack S3
       run: |
-        aws --endpoint-url=http://localhost:4566 s3 sync mlflow_server/artifacts s3://my-mlflow-bucket/models/
+        aws --endpoint-url=http://localhost:4566 s3 sync mlflow_server/artifacts s3://my-iris-bucket/models/
