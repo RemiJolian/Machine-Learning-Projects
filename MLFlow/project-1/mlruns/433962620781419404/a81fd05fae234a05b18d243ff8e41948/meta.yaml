@@ -1,0 +1,15 @@
+artifact_uri: file:///d:/1-Programming/1-Training-Files -Codes/Python/1-Ramin-Codes/Codes_1403/My-Machine-Learning-Projects/MLFlow/project-1/mlruns/433962620781419404/a81fd05fae234a05b18d243ff8e41948/artifacts
+end_time: 1730701949936
+entry_point_name: ''
+experiment_id: '433962620781419404'
+lifecycle_stage: active
+run_id: a81fd05fae234a05b18d243ff8e41948
+run_name: casual-tern-675
+run_uuid: a81fd05fae234a05b18d243ff8e41948
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730701949884
+status: 3
+tags: []
+user_id: Laptop Market - LTM
